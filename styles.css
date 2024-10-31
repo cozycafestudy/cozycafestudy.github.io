@@ -1,5 +1,6 @@
 /* General body styling */
 body {
+    background-image: url('background.gif');
     margin: 0;
     padding: 0;
     font-family: 'More Sugar', sans-serif;
