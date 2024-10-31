@@ -35,6 +35,9 @@ let closeSidebarButton = document.getElementById('close-sidebar');
 const customTab = document.getElementById('custom-tab');
 const pomodoroTab = document.getElementById('pomodoro-tab');
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.style.backgroundImage = "url('background.gif')";
+});
 
 //start stuff
 function showStudyTools() {
