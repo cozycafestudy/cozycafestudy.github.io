@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Café</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.cdnfonts.com/css/more-sugar" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/more-sugar');
+    </style>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+</head>
+<body>
+    <!-- Start Screen -->
+    <div id="start-screen-container" style="display:block">
+        <div id="start-screen">
+            <h1>Cozy Café Study Website</h1>
+            <img src="images/startscreen.gif" id="gif" alt="Café Animation" />
+            <button id="start-studying">Start Studying</button>
+        </div>
+    </div>
+    
+    <!-- Study Tools Screen -->
+    <div id="study-tools-container" style="display: none;">
+        <div id="study-tools">
+            <!-- Timer Styling -->
+            <div id="timer">
+                <div class="tab-container">
+                    <button class="tab-button" id="custom-tab">Custom Timer</button>
+                    <button class="tab-button" id="pomodoro-tab">Pomodoro Timer</button>
+                </div>
+                
+                <div id="custom-timer-container">
+                    <div id="timer-display">
+                        <!-- Minutes with up/down arrows -->
+                        <div class="time-adjust">
+                            <button class="up-arrow" id="minutes-up">▲</button>
+                            <span id="minutes">25</span>
+                            <button class="down-arrow" id="minutes-down">▼</button>
+                        </div>
+                        :
+                        <!-- Seconds with up/down arrows -->
+                        <div class="time-adjust">
+                            <button class="up-arrow" id="seconds-up">▲</button>
+                            <span id="seconds">00</span>
+                            <button class="down-arrow" id="seconds-down">▼</button>
+                        </div>
+                    </div>
+                    <div id="timer-buttons">
+                        <button id="start">Start Timer</button>
+                        <button id="pause">Pause Timer</button>
+                        <button id="reset">Reset Timer</button>
+                    </div>
+
+    
+                </div>
+                
+                <div id="pomodoro-timer-container" style="display: none;">
+                    <span id="pomodoro-minutes">25</span>
+                    :
+                    <span id="pomodoro-seconds">00</span>
+
+                    <div id="pomodoro-buttons">
+                        <button id="pomodoro-start">Start Timer</button>
+                        <button id="pomodoro-pause">Pause Timer</button>
+                        <button id="pomodoro-reset">Reset Timer</button>
+                    </div>
+                </div> 
+
+                <!-- Timer Buttons -->
+
+            </div>
+            <iframe id="music" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1746424434&color=%23c8af95&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        </div>
+    </div>
+
+    <audio id="alarm-sound" src="alarm.mp3" preload="auto"></audio>
+
+    <!-- Settings Button -->
+    <img src="images/settings.png" id="settings" alt="Settings Button">
+    
+
+    <!-- Sidebar Menu for Settings -->
+    <div id="sidebar" class="sidebar">
+        <button id="close-sidebar">X</button>
+        <h2>Settings</h2>
+        <div class="background-options">
+            <h3>Choose Background</h3>
+            <button class="background-btn" data-background="images/background.gif">Floral Café</button>
+            <button class="background-btn" data-background="images/beigecafe.gif">Beige Café</button>
+            <button class="background-btn" data-background="images/strawberrycafe.gif">Strawberry Café</button>
+            <button class="background-btn" data-background="images/cozyfireside.gif">Cozy Fireside</button>
+            <button class="background-btn" data-background="images/sunnykitchen.gif">Sunny Kitchen</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
